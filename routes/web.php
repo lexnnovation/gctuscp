@@ -140,16 +140,16 @@ Route::get('/signup', function () {
 //     ->middleware('guest')
 //     ->name('password.request');
 
-Route::post('/forgot-password', [ForgotPasswordController::class, 'store'])
-    ->middleware('guest')
-    ->name('password.email');
+// Route::post('/forgot-password', [ForgotPasswordController::class, 'store'])
+//     ->middleware('guest')
+//     ->name('password.email');
 
-Route::get('/reset-password/{token}', [ResetPasswordController::class, 'create'])
-    ->middleware('guest')
-    ->name('password.reset');
+// Route::get('/reset-password/{token}', [ResetPasswordController::class, 'create'])
+//     ->middleware('guest')
+//     ->name('password.reset');
 
-Route::post('/reset-password', [ResetPasswordController::class, 'store'])
-    ->middleware('guest');
+// Route::post('/reset-password', [ResetPasswordController::class, 'store'])
+//     ->middleware('guest');
 
 Route::get('/laravel-examples/user-profile', [ProfileController::class, 'index'])->name('users.profile')->middleware('auth');
 Route::put('/laravel-examples/user-profile/update', [ProfileController::class, 'update'])->name('users.update')->middleware('auth');
