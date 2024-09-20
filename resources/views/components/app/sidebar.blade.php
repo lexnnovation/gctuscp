@@ -32,10 +32,10 @@
                             </g>
                         </svg>
                     </div>
-                    <span class="nav-link-text ms-1">Home</span>
+                    <span class="nav-link-text ms-1">All Projects</span>
                 </a>
             </li>
-            <li class="nav-item">
+            {{-- <li class="nav-item">
                 <a class="nav-link  {{ is_current_route('tables') ? 'active' : '' }}" href="{{ route('tables') }}">
                     <div
                         class="icon icon-shape icon-sm px-0 text-center d-flex align-items-center justify-content-center">
@@ -63,7 +63,7 @@
                     </div>
                     <span class="nav-link-text ms-1">All Projects</span>
                 </a>
-            </li>
+            </li> --}}
 
             <li class="nav-item mt-2">
                 <div class="d-flex align-items-center nav-link">
